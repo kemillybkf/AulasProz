@@ -1,0 +1,45 @@
+def main():
+     nome = ""
+     idade = 0
+     email = ""
+     cidade = ""
+     profissão = ""
+     opcao = 0
+     while True:  
+         print("\n===== MENU =====")
+         print("1. Cadastrar dados")
+         print("2. Ver dados cadastrados")
+         print("3. Sair do sistema")
+         print("=====================")
+         opcao = int(input("Escolha uma opção: "))
+         
+         if opcao == 1:
+             nome = input("\nDigite seu nome:\n ")
+             idade = input("\nDigite sua idade:\n")
+             email = input("\nDigite seu E-mail:\n")
+             cidade = input("\nDigite sua cidade:\n")
+             profissão = input("\nDigite sua profissão:\n")
+             print("\nDados cadastrados com sucesso!\n")
+         
+         elif opcao == 2:
+             if  "nome" == "" and "idade" == 0 and "email" == "" and "cidade" == "" "profissão" == "":
+                 print("\nNenhum dado cadastrado ainda!\n")
+
+             else:
+                 print("\n=== NOME ===")
+                 print(f"nome: {nome}")
+                 print(f"idade: {idade}")
+                 print(f"e.mail: {email}")
+                 print(f"cidade: {cidade}")
+                 print(f"profissao: {profissão}")
+                 print("=========================")
+         
+         elif opcao == 3:
+             print("\nEncerrando o sistema...\n")
+             break
+         
+         else:  
+             print("Opção inválida! Tente novamente.")
+if __name__ == "__main__":
+ 
+     main() 
