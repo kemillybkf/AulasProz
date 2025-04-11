@@ -1,0 +1,15 @@
+def main():
+        test=0
+idade = 0
+idade = int(input("Qual a sua idade?"))
+if idade < 13:
+    print("Criança")
+elif idade  <= 17:
+    print("Adolescente")
+elif idade >= 18 and idade<60:
+    print("Adulto")
+elif idade >= 60:
+    print("Idoso")
+
+if __name__ == "__main__":
+        main()
