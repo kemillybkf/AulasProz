@@ -11,7 +11,7 @@ Inicio
 escreval("===================================")
 escreval("         BANCO KET VISUALG         ")
 escreval("===================================")
-timer(500)
+
 senha <- 123456
 escreval("Digite seu nome:")
 leia(nome)
@@ -24,7 +24,7 @@ se(numero <> 123456) entao
 escreval("Digite a sua senha correta:")
 leia(numero)
 fimse
- 
+timer(1000)
 ate(numero = 123456)
 escreval("===================================")
 escreval("Obrigado ", nome, " - Senha CORRETA!")
@@ -35,9 +35,9 @@ escreval("===================================")
 escreval("         BANCO KET VISUALG         ")
 escreval("===================================")
 
-escreval("ESCREVA UMA OPÇÃO")
+escreval("ESCREVA UMA OPÃ‡ÃƒO")
 escreval("1 - Para ver o SALDO")
-escreval("2 - Para EMPRÈSTIMOS")
+escreval("2 - Para EMPRÃˆSTIMOS")
 escreval("3 - SAIR")
 
 repita
@@ -49,13 +49,13 @@ caso 1
 escreval ("Saldo = R$ 12.987,00")
 
 caso 2
-escreval ("Empréstimo disponivel: R$ 30.000,00")
+escreval ("EmprÃ©stimo disponivel: R$ 30.000,00")
 
 caso 3
-escreval ("Obrigado, ", nome, "Boa semana!")
+escreval ("Obrigado, ", nome, " Boa semana!")
 
 outrocaso
-escreval ("Digite um número valido, entre 1 a 3")
+escreval ("Digite um nÃºmero valido, entre 1 a 3")
 fimescolha
 fimenquanto
 ate (opcao = 3)
